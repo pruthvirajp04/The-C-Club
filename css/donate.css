@@ -10,12 +10,12 @@
 
 
 .navbar {
-  position: sticky;
+  position: fixed;
   align-items: center;
   display: flex;
   width: 100%;
   padding-top: 15px;
-  background-color: rgba(161, 121, 121, 0);
+  backdrop-filter: blur(20px);
   z-index: 9;
 }
 .container {
@@ -32,6 +32,8 @@
 }
 
 .nav {
+  position: relative;
+  left: -12rem;
   flex: 1;
   text-align: right;
 }
@@ -39,20 +41,32 @@
 .nav ul {
   flex: 1;
   text-align: right;
+  
 }
 
 .nav ul li {
   display: inline-block;
   margin: 15px;
 }
+
+.nav ul li:hover{
+  transform: scale(1.05);
+
+}
+
 .nav ul li a {
-  color: rgb(223, 189, 189);
+  /* color: rgb(223, 189, 189); */
+  color: rgb(255, 140, 0);
+  font-size: 1.8rem;
   font-style: normal;
   text-decoration: none;
 }
 
 .nav ul li a:hover {
-  color: rgb(90, 50, 1);
+  /* color: rgb(90, 50, 1); */
+  text-decoration-line: underline;
+  text-decoration-color: #fff;
+  text-underline-offset: 5px;
 }
 
 .menu {
@@ -205,4 +219,3 @@ h2{
   margin-left: 15vh;
   margin-top: 10vh;
 }
-

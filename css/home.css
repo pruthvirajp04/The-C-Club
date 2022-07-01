@@ -1,20 +1,63 @@
 /* @import url("donate.css"); */
+body{
+  background-color: black;
+  /* background: url(https://i.pinimg.com/originals/79/a3/84/79a384c3c449ad01b0e57e790807b2c0.gif); */
+  background-position: center;
+}
 
-.landing_page{
+.landing_page {
     margin-top: 150px;
     margin-bottom: 150px;
 }
 
-.heading_shikher{
-    font-size: 70px;
+.glow{
+  border-radius: 12px;
+  box-shadow: 0 0 0 1px rgba(0,0,0,.01);
+  transform: scale(0.9);
+  background: linear-gradient(
+    to left,
+    #ff5770,
+    #e4428d,
+    #c42da8,
+    #9e16c3,
+    #6501de,
+    #9e16c3,
+    #c42da8,
+    #e4428d,
+    #ff5770
+  );
+  background-size: 200% 200%;
+  animation: animateGlow 1.25s linear infinite;
 }
 
-h3{
-    font-size: 28px;
+@keyframes animateGlow {
+  0% {
+    background-position: 0% 50%;
+  }
+  100% {
+    background-position: 200% 50%;
+  }
+}
+
+.heading_shikher {
+  font-size: 70px;
+  padding: 20px 20px 0px 20px;
+  margin-left: 4rem;
+  color: #012169;
+}
+
+h3 {
+    display: flex;
+    justify-content: right;
+    margin-right: 4rem;
+    padding: 0 20px 20px 20px;
+    font-size: 34px;
     color: rgb(221, 239, 239);
 }
 
-#found_info{
+#found_info {
+    display: flex;
+    justify-content: center;
     margin-top: 150px;
     color: #8388a0;
 }
@@ -30,7 +73,7 @@ h3{
   
   .marquee-content {
     display: flex;
-    animation: scrolling 30s linear infinite;
+    animation: scrolling 25s linear infinite;
   }
   
   .marquee-item {
@@ -54,8 +97,3 @@ h3{
   .textinfo{
     color: bisque;
   }
-body{
-  background-color: black;
-  background: url(https://i.pinimg.com/originals/79/a3/84/79a384c3c449ad01b0e57e790807b2c0.gif);
-  background-position: center;
-}
