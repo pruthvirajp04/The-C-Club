@@ -41,7 +41,7 @@ body{
 
 .heading_shikher {
   font-size: 70px;
-  padding: 20px 20px 0px 20px;
+  padding: 20px;
   margin-left: 4rem;
   color: #012169;
 }
@@ -50,22 +50,61 @@ h3 {
     display: flex;
     justify-content: right;
     margin-right: 4rem;
-    padding: 0 20px 20px 20px;
+    padding: 20px;
     font-size: 34px;
     color: rgb(221, 239, 239);
 }
 
-#found_info {
+.found_info {
     display: flex;
     justify-content: center;
-    margin-top: 150px;
-    color: #8388a0;
+    margin-top: 40px;
+    /* color: #f2f2f2; */
+    color: #6A5ACD;
+    /* background-color: #fff; */
+}
+
+.filled {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* margin-top: 10px; */
+  margin-bottom: 30px;
+  width: 0%;
+  height: 2.5px;
+  left: 26%;
+  background-color: #6A5ACD;
+  transition: 0.30s ease-out;
+}
+
+.title:hover .filled {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40%;
+  /* left: 30%; */
+  background-color: #6A5ACD;
+  transition: 0.30s ease-out;
+}
+
+pre {
+    font-size: 1.3rem;
+    color: #f2f2f2;
+    margin: 20px 30px 20px 30px;
+    padding: 20px;
+    border-radius: 10px;
+    border: 2px solid #6A5ACD;
+    overflow: auto;
+    white-space: pre-wrap;
+    word-wrap: break-word;
 }
 
 * {
     box-sizing: border-box;
   }
- 
+
   
   .marquee {
     overflow: hidden;
@@ -97,3 +136,18 @@ h3 {
   .textinfo{
     color: bisque;
   }
+
+.footer {
+    position: relative;
+    margin-top: 40px;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    color: white;
+    text-align: center;
+}
+
+.link:hover {
+    color: #6A5ACD;
+    text-decoration: none;
+}

@@ -56,7 +56,8 @@
 
 .nav ul li a {
   /* color: rgb(223, 189, 189); */
-  color: rgb(255, 140, 0);
+  /* color: rgb(255, 140, 0); */
+  color: #6A5ACD;
   font-size: 1.8rem;
   font-style: normal;
   text-decoration: none;
