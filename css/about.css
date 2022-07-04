@@ -1,1 +1,42 @@
 @import url("donate.css");
+*{
+	margin: 0px;
+	padding: 0px;
+}
+.center {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 50%;
+}
+.image{
+	float: left;
+	width: 50%;
+}
+.image img{
+	width: 100%;
+	height: auto;
+}
+h1{
+	text-align: center;
+	color: white;
+}
+h2{
+	text-align: center;
+	color: white;
+}
+h3{
+	color: #FFFFFF;
+}
+
+
+
+
+
+
+
+
+
+
+
+
